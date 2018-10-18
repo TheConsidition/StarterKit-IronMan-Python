@@ -1,2 +1,2 @@
 # StarterKit-IronMan-Python
-RestClient and Parser for The Considition hackathon written in Python
+RestClient and Parser for The Considition 2018 hackathon written in Python

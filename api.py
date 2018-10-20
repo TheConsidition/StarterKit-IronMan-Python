@@ -98,6 +98,9 @@ class API:
         response = r.json()
         if not response["success"]:
             print(response["message"])
+            while not response["success"]:
+                response = self.get_game(game_id)
+            return response
         else:
             return response
 
@@ -111,6 +114,9 @@ class API:
             response = r.json()
             if not response["success"]:
                 print(response["message"])
+                while not response["success"]:
+                    response = self.get_game(game_id)
+                return response
             else:
                 return response
 
@@ -122,6 +128,9 @@ class API:
         response = r.json()
         if not response["success"]:
             print(response["message"])
+            while not response["success"]:
+                response = self.get_game(game_id)
+            return response
         else:
             return response
 
@@ -133,6 +142,9 @@ class API:
         response = r.json()
         if not response["success"]:
             print(response["message"])
+            while not response["success"]:
+                response = self.get_game(game_id)
+            return response
         else:
             return response
 
@@ -144,6 +156,9 @@ class API:
         response = r.json()
         if not response["success"]:
             print(response["message"])
+            while not response["success"]:
+                response = self.get_game(game_id)
+            return response
         else:
             return response
 
